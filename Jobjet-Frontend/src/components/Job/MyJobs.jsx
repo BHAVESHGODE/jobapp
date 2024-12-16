@@ -18,7 +18,7 @@ const MyJobs = () => {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          "https://jobjet-backend.onrender.com/api/v1/job/getmyjobs",
+          "https://jobapp-4ydx.onrender.com/api/v1/job/getmyjobs",
           { withCredentials: true }
         );
         setMyJobs(data.myJobs);
@@ -51,7 +51,7 @@ const MyJobs = () => {
     const updatedJob = myJobs.find((job) => job._id === jobId);
     await axios
       .put(
-        `https://jobjet-backend.onrender.com/api/v1/job/update/${jobId}`,
+        `https://jobapp-4ydx.onrender.com/api/v1/job/update/${jobId}`,
         updatedJob,
         {
           withCredentials: true,
@@ -71,7 +71,7 @@ const MyJobs = () => {
     setLoading(true);
     await axios
       .delete(
-        `https://jobjet-backend.onrender.com/api/v1/job/delete/${jobId}`,
+        `https://jobapp-4ydx.onrender.com/api/v1/job/delete/${jobId}`,
         {
           withCredentials: true,
         }

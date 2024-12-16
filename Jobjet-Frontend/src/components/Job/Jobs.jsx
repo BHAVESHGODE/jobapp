@@ -14,7 +14,7 @@ const Jobs = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "https://jobjet-backend.onrender.com/api/v1/job/getall",
+          "https://jobapp-4ydx.onrender.com/api/v1/job/getall",
           {
             withCredentials: true,
           }

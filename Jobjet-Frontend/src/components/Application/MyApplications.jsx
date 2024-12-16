@@ -21,8 +21,8 @@ const MyApplications = () => {
       try {
         const endpoint =
           user && user.role === "Employer"
-            ? "https://jobjet-backend.onrender.com/api/v1/application/employer/getall"
-            : "https://jobjet-backend.onrender.com/api/v1/application/jobseeker/getall";
+            ? "https://jobapp-4ydx.onrender.com/api/v1/application/employer/getall"
+            : "https://jobapp-4ydx.onrender.com/api/v1/application/jobseeker/getall";
 
         const res = await axios.get(endpoint, {
           withCredentials: true,
@@ -46,7 +46,7 @@ const MyApplications = () => {
   const deleteApplication = async (id) => {
     try {
       const res = await axios.delete(
-        `https://jobjet-backend.onrender.com/api/v1/application/delete/${id}`,
+        `https://jobapp-4ydx.onrender.com/api/v1/application/delete/${id}`,
         {
           withCredentials: true,
         }

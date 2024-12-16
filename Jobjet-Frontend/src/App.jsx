@@ -24,7 +24,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://jobjet-backend.onrender.com/api/v1/user/getuser",
+          "https://jobapp-4ydx.onrender.com/api/v1/user/getuser",
           {
             withCredentials: true,
           }

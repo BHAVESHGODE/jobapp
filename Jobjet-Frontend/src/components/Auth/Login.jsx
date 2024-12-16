@@ -19,7 +19,7 @@ const Login = () => {
     try {
       setLogin("Logging in ... Please wait");
       const { data } = await axios.post(
-        "https://jobjet-backend.onrender.com/api/v1/user/login",
+        "https://jobapp-4ydx.onrender.com/api/v1/user/login",
         { email, password, role },
         {
           headers: {
