@@ -10,11 +10,7 @@ import fileUpload from "express-fileupload";
 import { dbConnection } from "./database/dbConnection.js";
 import { errorMiddleware } from "./middlewares/error.js";
 app.use(
-  cors({
-    origin: ["*"],
-    method: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-  })
+  cors()
 );
 app.use(
   fileUpload({
