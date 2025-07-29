@@ -9,9 +9,10 @@ import applicationRouter from "./routes/applicationRoutes.js";
 import fileUpload from "express-fileupload";
 import { dbConnection } from "./database/dbConnection.js";
 import { errorMiddleware } from "./middlewares/error.js";
-app.use(
-  cors()
-);
+app.use(cors({
+  origin: allowedOrigin,
+  credentials: true,
+}));
 app.use(
   fileUpload({
     useTempFiles: true,
