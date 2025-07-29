@@ -10,7 +10,7 @@ import fileUpload from "express-fileupload";
 import { dbConnection } from "./database/dbConnection.js";
 import { errorMiddleware } from "./middlewares/error.js";
 app.use(cors({
-  origin: "*",
+  origin: "https://jobapp-five.vercel.app", // Only allow your frontend
   credentials: true,
 }));
 app.use(
