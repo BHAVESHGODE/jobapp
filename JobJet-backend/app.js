@@ -11,7 +11,7 @@ import { dbConnection } from "./database/dbConnection.js";
 import { errorMiddleware } from "./middlewares/error.js";
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://jobjet-frontend.vercel.app"],
+    origin: ["*"],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
