@@ -8,20 +8,21 @@ const Footer = () => {
   const { isAuthorized } = useContext(Context);
   return (
     <footer className={isAuthorized ? "footerShow" : "footerHide"}>
-      <div>&copy; All Rights Reserved By Hitanshu.</div>
+      <div>&copy; All Rights Reserved By Bhavesh.</div>
       <div>
-        <Link to={"https://www.linkedin.com/in/hitanshu-gavri-ba164028a/"} target="_blank">
+        <Link to={"https://www.linkedin.com/in/bhavesh-gode-03a80223a/"} target="_blank">
           <FaFacebookF />
         </Link>
-        <Link to={"https://www.linkedin.com/in/hitanshu-gavri-ba164028a/"} target="_blank">
+        <Link to={"https://www.linkedin.com/in/bhavesh-gode-03a80223a/"} target="_blank">
           <FaYoutube />
         </Link>
-        <Link to={"https://www.linkedin.com/in/hitanshu-gavri-ba164028a/"} target="_blank">
+        <Link to={"https://www.linkedin.com/in/bhavesh-gode-03a80223a/"} target="_blank">
           <FaLinkedin />
         </Link>
-        <Link to={"https://www.linkedin.com/in/hitanshu-gavri-ba164028a/"} target="_blank">
+        <Link to={"https://www.linkedin.com/in/bhavesh-gode-03a80223a/"} target="_blank">
           <RiInstagramFill />
         </Link>
+        
       </div>
     </footer>
   );
